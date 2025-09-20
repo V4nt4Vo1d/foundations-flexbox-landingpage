@@ -1,1 +1,63 @@
 /* Here is my styles.css for the Landing Page Project */
+.logo-nav {
+    background-color: #1F2937;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+.logo-nav ul {
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+.logo-nav ul li a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.intro-header {
+    display: flex;
+    font-size: 18px;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 32px;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;  
+    gap: 16px;
+
+}
+ .intro-header img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 25%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 16px;
+ }
+ 
+ .copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #E5E7EB;
+    background-color: #1F2937;
+    padding: 16px;
+ }

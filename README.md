@@ -2,7 +2,7 @@
 
 This is the **Landing Page** project from [The Odin Project's
 Foundations
-curriculum](https://www.theodinproject.com/lessons/foundations-landing-page).\
+curriculum](https://www.theodinproject.com/lessons/foundations-landing-page).
 The goal of this project is to practice **Flexbox** by building a
 simple, responsive landing page layout.
 
@@ -10,17 +10,17 @@ simple, responsive landing page layout.
 
 ## 🔧 Built With
 
--   HTML5\
+-   HTML5
 -   CSS3 (Flexbox)
 
 ------------------------------------------------------------------------
 
 ## 📚 Skills Practiced
 
--   Structuring a webpage with semantic HTML\
--   Using Flexbox for layout and alignment\
--   Applying the box model (margin, padding, borders)\
--   Working with typography, colors, and images\
+-   Structuring a webpage with semantic HTML
+-   Using Flexbox for layout and alignment
+-   Applying the box model (margin, padding, borders)
+-   Working with typography, colors, and images
 -   Following a design reference to recreate a page
 
 ------------------------------------------------------------------------
@@ -28,8 +28,8 @@ simple, responsive landing page layout.
 ## 🎯 Project Goals
 
 -   Create a visually consistent landing page based on the provided
-    design reference.\
--   Use Flexbox to align and distribute elements across the page.\
+    design reference.
+-   Use Flexbox to align and distribute elements across the page.
 -   Gain confidence working with responsive layouts.
 
 ------------------------------------------------------------------------
