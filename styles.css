@@ -1,4 +1,11 @@
-/* Here is my styles.css for the Landing Page Project */
+
+/* === Responsive Upgrade for styles.css (drop-in replacement) ===
+   Goal: keep the same visual layout & pages, but make it scale from phones to large desktops.
+   Notes: This file is safe to use as a replacement. If you prefer, rename to styles.responsive.css
+   and update <link rel="stylesheet" href="styles.css"> to match.
+=== */
+
+/* ----- Original base styles (kept as-is where possible) ----- */
 .logo-nav {
     background-color: #1F2937;
     padding: 16px;
@@ -14,7 +21,6 @@
     font-size: 24px;
     color: #F9FAF8;
     margin: 0;
-
 }
 
 .logo-nav ul {
@@ -39,6 +45,8 @@
 .intro-header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    gap: 24px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     background-color: #1F2937;
@@ -52,7 +60,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-around;  
+    justify-content: space-around;
     gap: 16px;
     max-width: 300px;
 }
@@ -81,9 +89,9 @@
     height: auto;
     border-radius: 8px;
     margin-top: 16px;
- }
- 
- .copyright {
+}
+
+.copyright {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -94,9 +102,9 @@
     background-color: #1F2937;
     padding: 16px;
     margin: auto;
- }
+}
 
- .body {
+.body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -104,143 +112,141 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-    .body h2 {
-        font-size: 24px;
-        margin-bottom: 64px;
-    }
-    
-    .body ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        list-style: none;
-        padding: 8px;
-        gap: 32px;
-        font-size: 18px;
-    }
-    
-    .body ul li {
-        display: flex;
-        text-align: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-        font-size: 16px;
-        margin-bottom: 8px;
-    }
-    
-    .body ul li img {
-        display: flex;
-        width: 150px;
-        height: 150px;
-        border-radius: 16px;
+.body h2 {
+    font-size: 24px;
+    margin-bottom: 64px;
+}
 
-    }
+.body ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 8px;
+    gap: 32px;
+    font-size: 18px;
+}
 
-    .quote-section {
-        display: flex;
-        margin-top: 64px;
-        padding: 75px;
-        background-color: #E5E7EB;
-        font-style: italic;
-        font-size: 18px;
-        flex-wrap: wrap;
-        width: 90%;
-        justify-content: center;
-    }
+.body ul li {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
 
-    .footer {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 18px;
-        padding: 16px;
-        border-top: 50px solid white;
-        border-bottom: 50px solid white;
-        border-left: 50px solid white;
-        border-right: 50px solid white;
-        border-radius: 100px;
-        background-color: #3882F6;
-        color: #E5E7EB;
-        text-align: center;
-    }
+.body ul li img {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+}
 
+.quote-section {
+    display: flex;
+    margin-top: 64px;
+    padding: 75px;
+    background-color: #E5E7EB;
+    font-style: italic;
+    font-size: 18px;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
 
-    .footer p + h2 {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 16px;
-    }
+.footer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    padding: 16px;
+    border-top: 50px solid white;
+    border-bottom: 50px solid white;
+    border-left: 50px solid white;
+    border-right: 50px solid white;
+    border-radius: 100px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    text-align: center;
+}
 
-    .footer button {
-        background-color: #3882F6;
-        color: #E5E7EB;
-        border: 1px solid #E5E7EB;
-        padding: 12px 24px;
-        font-size: 16px;
-        border-radius: 8px;
-        cursor: pointer;
-    }
+.footer p + h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 16px;
+}
 
-    .footer button a {
-        text-decoration: none;
-        color: #E5E7EB;
-    }
+.footer button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border: 1px solid #E5E7EB;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
-    .form-container {
-        background-color: #3882F6;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-        padding: 16px;
-        border-radius: 150px;
-        margin-top: 50px;
-        margin-left: 75px;
-        margin-right: 75px;
-    }
+.footer button a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
 
-    .form-container label {
-        font-size: 18px;
-    }
+.form-container {
+    background-color: #3882F6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 150px;
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
 
-    .form-container input {
-        display: flex;
-        padding: 12px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        width: 100%;
-        max-width: 400px;
-        margin: 8px;
-    }
+.form-container label {
+    font-size: 18px;
+}
 
-    .form-container button {
-        display: flex;
-        background-color: #3882F6;
-        color: #E5E7EB;
-        border: 1px solid #E5E7EB;
-        padding: 12px 24px;
-        margin: 16px;
-        margin-left: 80px;
-        font-size: 16px;
-        border-radius: 16px;
-        cursor: pointer;
-    }
+.form-container input {
+    display: flex;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    margin: 8px;
+}
 
-    #vanta-project {
-        background-color: #1F2937;
-        color: #E5E7EB;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: nowrap;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.form-container button {
+    display: flex;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border: 1px solid #E5E7EB;
+    padding: 12px 24px;
+    margin: 16px;
+    margin-left: 80px;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+}
 
-    }
+#vanta-project {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .vanta-header img {
     width: 450px;
     height: 450px;
@@ -249,9 +255,11 @@
     display: block;
 }
 
- .vanta-header {
+.vanta-header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    gap: 24px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     flex-wrap: nowrap;
@@ -260,25 +268,26 @@
     box-sizing: border-box;
     background-color: #1F2937;
     color: #E5E7EB;
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0 0 0;
 }
+
 .vanta-header .intro-text {
-    min-width: 400px;          /* Prevent text from getting too narrow */
+    min-width: 400px;
     flex: 1 1 0;
 }
-body .vanta-container{
+
+body .vanta-container {
     min-height: 100vh;
     margin: 0;
     background-color: #1F2937;
 }
 
-html, body{
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     flex: 1 0 auto;
 }
-
 
 .about-body .copyright {
     display: flex;
@@ -300,4 +309,82 @@ html, body{
     background-color: #1F2937;
     padding: 16px;
     margin-top: 50px;
+}
+
+/* ----- Fluid foundations & small fixes ----- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+img { max-width: 100%; height: auto; }  /* prevent overflow */
+
+.container, .vanta-container { padding-left: 16px; padding-right: 16px; }
+
+/* Let nav wrap nicely on smaller screens */
+.logo-nav { flex-wrap: wrap; gap: 16px; }
+.logo-nav ul { flex-wrap: wrap; justify-content: center; }
+
+/* Body grid that adapts from row to tiles */
+.body ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+.body ul li img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+}
+
+/* Avoid huge whitespace on some pages */
+.about-body .copyright { margin-top: 120px; }
+
+/* ----- Breakpoints ----- */
+
+/* Large tablets / small laptops */
+@media (max-width: 1024px) {
+  .intro-header { padding: 32px; }
+  .intro-header img { max-width: 420px; width: 100%; margin-top: 0; }
+  .vanta-header { flex-wrap: wrap; text-align: center; padding: 32px 0 0; }
+  .vanta-header .intro-text { min-width: auto; align-items: center; max-width: 700px; }
+  .vanta-header img { width: min(60vw, 380px); height: auto; margin-top: 24px; }
+}
+
+/* Tablets & large phones (portrait) */
+@media (max-width: 768px) {
+  .logo-nav h1 { font-size: 20px; }
+  .intro-header {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      padding: 24px;
+  }
+  .intro-text { align-items: center; max-width: none; }
+  .intro-text h1 { font-size: 28px; }
+  .footer {
+      border-width: 24px;
+      border-radius: 40px;
+      padding: 20px;
+  }
+  .form-container {
+      margin: 24px 16px;
+      border-radius: 24px;
+  }
+  .quote-section { padding: 24px; width: 94%; }
+  .copyright { padding: 12px; }
+  .vanta-header img { width: min(70vw, 340px); }
+  .about-body .copyright { margin-top: 64px; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .logo-nav h1 { font-size: 18px; }
+  .logo-nav { justify-content: center; }
+  .logo-nav ul { gap: 12px; }
+  .intro-text h1 { font-size: 24px; }
+  .body h2 { font-size: 20px; margin-bottom: 32px; }
+  .body ul li { font-size: 14px; }
+  .vanta-header { padding: 24px 0 0; }
+  .vanta-header img { width: min(80vw, 300px); }
+  .footer { border-width: 16px; border-radius: 28px; }
 }
