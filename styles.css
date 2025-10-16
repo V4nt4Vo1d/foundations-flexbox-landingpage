@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* === Responsive Upgrade for styles.css (drop-in replacement) ===
    Goal: keep the same visual layout & pages, but make it scale from phones to large desktops.
@@ -388,3 +389,228 @@ img { max-width: 100%; height: auto; }  /* prevent overflow */
   .vanta-header img { width: min(80vw, 300px); }
   .footer { border-width: 16px; border-radius: 28px; }
 }
+=======
+/* Here is my styles.css for the Landing Page Project */
+.logo-nav {
+    background-color: #1F2937;
+    padding: 16px;
+    gap: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.logo-nav h1 {
+    font-size: 24px;
+    color: #F9FAF8;
+    margin: 0;
+
+}
+
+.logo-nav ul {
+    font-size: 16px;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+.logo-nav ul li a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.logo {
+    font-size: 16px;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.intro-header {
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 50px;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;  
+    gap: 16px;
+    max-width: 300px;
+}
+
+.intro-text button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border: 1px solid #E5E7EB;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.intro-text button a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.intro-header img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 25%;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 16px;
+ }
+ 
+ .copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #E5E7EB;
+    background-color: #1F2937;
+    padding: 16px;
+ }
+
+ .body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+    .body h2 {
+        font-size: 24px;
+        margin-bottom: 64px;
+    }
+    
+    .body ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding: 8px;
+        gap: 32px;
+        font-size: 18px;
+    }
+    
+    .body ul li {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .body ul li img {
+        display: flex;
+        width: 150px;
+        height: 150px;
+        border-radius: 16px;
+
+    }
+
+    .quote-section {
+        display: flex;
+        flex: 1;
+        margin-top: 64px;
+        padding: 75px;
+        background-color: #E5E7EB;
+        font-style: italic;
+        font-size: 18px;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .footer {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        padding: 16px;
+        border-top: 50px solid white;
+        border-bottom: 50px solid white;
+        border-left: 50px solid white;
+        border-right: 50px solid white;
+        border-radius: 100px;
+        background-color: #3882F6;
+        color: #E5E7EB;
+        text-align: center;
+    }
+
+
+    .footer p + h2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 16px;
+    }
+
+    .footer button {
+        background-color: #3882F6;
+        color: #E5E7EB;
+        border: 1px solid #E5E7EB;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .form-container {
+        background-color: #3882F6;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding: 16px;
+        border-radius: 150px;
+        margin-top: 50px;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    .form-container label {
+        font-size: 18px;
+    }
+
+    .form-container input {
+        display: flex;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+        max-width: 400px;
+        margin: 8px;
+    }
+
+    .form-container button {
+        display: flex;
+        background-color: #3882F6;
+        color: #E5E7EB;
+        border: 1px solid #E5E7EB;
+        padding: 12px 24px;
+        margin: 16px;
+        margin-left: 80px;
+        font-size: 16px;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+>>>>>>> 503391a (Staging for pull rebase)
