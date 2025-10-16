@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-
-/* === Responsive Upgrade for styles.css (drop-in replacement) ===
-   Goal: keep the same visual layout & pages, but make it scale from phones to large desktops.
-   Notes: This file is safe to use as a replacement. If you prefer, rename to styles.responsive.css
-   and update <link rel="stylesheet" href="styles.css"> to match.
-=== */
-
+    
 /* ----- Original base styles (kept as-is where possible) ----- */
 .logo-nav {
     background-color: #1F2937;
@@ -62,7 +55,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;
-    gap: 16px;
+    gap: 30px;
     max-width: 300px;
 }
 
@@ -82,10 +75,7 @@
 }
 
 .intro-header img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    display: block;
     max-width: 25%;
     height: auto;
     border-radius: 8px;
@@ -389,7 +379,7 @@ img { max-width: 100%; height: auto; }  /* prevent overflow */
   .vanta-header img { width: min(80vw, 300px); }
   .footer { border-width: 16px; border-radius: 28px; }
 }
-=======
+
 /* Here is my styles.css for the Landing Page Project */
 .logo-nav {
     background-color: #1F2937;
@@ -446,7 +436,7 @@ img { max-width: 100%; height: auto; }  /* prevent overflow */
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;  
-    gap: 16px;
+    gap: 25px;
     max-width: 300px;
 }
 
@@ -613,4 +603,36 @@ img { max-width: 100%; height: auto; }  /* prevent overflow */
         border-radius: 16px;
         cursor: pointer;
     }
->>>>>>> 503391a (Staging for pull rebase)
+
+    .vantaproject-about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 16px;
+    max-width: 300px;
+}
+
+.vantaproject-about button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border: 1px solid #E5E7EB;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.vantaproject-about button a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.intro-imgs {
+     display: flex; flex-direction: column !important; gap: 350px; 
+    }
+
+.intro-imgs img {
+     max-width: 200px; width: 400%; height: 400%; margin-top: 0; 
+    }
