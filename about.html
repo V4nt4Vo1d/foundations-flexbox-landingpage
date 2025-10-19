@@ -6,7 +6,7 @@
     <title>About Us Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="about-page">
     <div class="container">
         <div class="logo-nav">
             <h1 class="logo">Landing Page Project</h1>
@@ -18,22 +18,48 @@
             </ul>
         </div>
         <div class="intro-header">
-            <div class="intro-text">
-                <h1>About the Project</h1>
-                <p>This project is a simple landing page built using Flexbox as part of The Odin Project. It serves as a demonstration of the skills learned in the initial foundations curriculum regarding CSS Flexbox and basic HTML structure.</p>
-                <br><strong>What is The Odin Project?</strong>
-                <button><a href="https://www.theodinproject.com/lessons/foundations-landing-page" target="_blank" rel="noopener noreferrer">Learn More</a></button>
+            <section class="about-grid">
+                <!-- The Odin Project -->
+                <article class="about-card">
+                <header>
+                    <h1>About the Project</h1>
+                </header>
+                <p>
+                    This project is a simple landing page built using Flexbox as part of The Odin Project. It serves as a demonstration of the skills learned in the initial foundations curriculum regarding CSS Flexbox and basic HTML structure.
+                </p>
 
-                <h1>About VANT∆ Project</h1>
-                <p>A portfolio of experiments in web development, networking, and applications. Some basic pages work today; others are a work in progress and are not yet functional.</p>
-                <button><a href="https://vantaproject.space" target="_blank" rel="noopener noreferrer">Visit VANT∆ Project</a></button>
-            </div>
-            <div class="intro-imgs">
-                <img src="images/header-photo.jpg" alt="Placeholder Image">
-                <img src="images/vanta-logo.png" alt="VANT∆ Project Logo">
+                <figure class="about-media">
+                <img src="images/odin-logo2.svg" alt="The Odin Project logo" width="1000" height="1000">
+                </figure>
+
+                <div class="about-actions">
+                    <strong>What is The Odin Project?</strong>
+                    <a class="btn" href="https://www.theodinproject.com/lessons/foundations-landing-page" target="_blank" rel="noopener noreferrer">Learn More</a>
+                </div>
+                </article>
+
+                 <!-- VANT∆ Project -->
+                <article class="about-card">
+                <header>
+                    <h1>About VANT∆ Project</h1>
+                </header>
+                <p>
+                    A portfolio of experiments in web development, networking, and applications. Some basic pages work today; others are a work in progress and are not yet functional.
+                </p>
+
+                <figure class="about-media">
+                    <img src="images/vanta-logo.png" alt="VANT∆ Project Logo">
+                </figure>
+
+                <div class="about-actions">
+                    <a class="btn" href="https://vantaproject.space" target="_blank" rel="noopener noreferrer">Visit VANT∆ Project</a>
+                </div>
+                </article>
+            </section>
             </div>
         </div>
-    </div>
+
+</body>
 <div class="about-body">
 <div class="copyright">
     <p> Copyright &copy; 2025 Landing Page Project. All rights reserved.</p>
